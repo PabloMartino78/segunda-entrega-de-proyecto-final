@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colores del cuerpo y encabezado */
+header{
+    display: grid;
+    grid-template-areas:
+    "logo-titulo h1 h1 h1"
+    "nav nav nav nav";
+}
+.logo-titulo{
+    grid-area: logo-titulo;
+}
+.h1{
+    grid-area: h1;
+}
+nav{
+    grid-area: nav;
+}
+
+
+
+
+/* encabezado logo */
+.logo{
+    width: 300px;
+    height: 300px;
+}
+
+/* nombre de pagina index */
+.h1{
+    font-size: 60px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+/* menu navegable */
+nav ul li{
+    background-color:rgb(168, 159, 159);
+    display: inline-block;
+    margin-left: 180px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    border:solid 2px rgb(66, 64, 64);
+}
+
+
+nav ul li:hover{
+    background-color: rgb(245, 228, 228);
+    transform: scale(2);
+}
+
+
+/* boton de cotizar */
+.boton-cotizar{
+    margin: 30px;
+    font-size: 50px;
+    border: solid black;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+/* form de pagina ciniestro */
+.form-siniestro{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 90px;
+}
+
+
+
+
+/* main, cuerpo principal de pagina */
+/* aplicando grig al main */
+.h22{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.imag-p{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+/* imagenes de seguros */
+.tama-1{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.tama-2{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.tama-3{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.tama-4{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.imag-seg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    justify-items: center;
+    
+}
+
+/* main de pagina nosotros */
+.container{
+    text-align: center;
+    margin-top: 30px; 
+}
+
+
+/* main pagina contacto */
+
+.video-contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/* fin del main */
+
+
+/* footer, pie de pagina */
+
+footer h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+
+
+/*  logos de redes */
+.redes-inst{
+    width: 110px;
+    height: 110px;
+}
+.redes-wh{
+    width: 100px;
+    height: 100px;
+}
+.redes-fb{
+    width: 100px;
+    height: 100px;
+}
+
+.seccion-redes{
+    margin-left: 250px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+    
+
+
+/* mapa ubicacion */
+.mapa{
+    width: 300px;
+    height: 200px;
+    padding-left: 100px;
+}
+
+
+/* formulario */
+form{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+form fieldset{
+    border: solid 2px blue;
+    font-size: 30px;
+
+}
+
+.map-form{
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+
+    }
+
+.derechos{
+    font-size: 15px;
+    background-color: rgb(82, 85, 255);
+    margin: 100px;
+    text-align: center;
+
+}
+
+
+
+
+/* fin footer */
+
+
+
+
+/*  comienzo de media queries */
+
+
+@media (min-max:844px){
+    /* encabezado logo */
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+/* nombre de pagina index */
+.h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+/* menu navegable */
+nav ul li{
+    background-color: aqua;
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    border: solid 2px black;
+    
+}
+
+nav{
+    display: flex;
+
+}
+
+.boton-cotizar{
+    margin: 10px;
+    padding-left: 120px;
+    font-size: 30px;
+    border: solid black;
+    font-family: fantasy; 
+}
+
+/* main, cuerpo principal de pagina */
+/* aplicando grig al main */
+.h22{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.imag-p{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+/* imagenes de seguros */
+.tama-1{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.tama-2{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.tama-3{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.tama-4{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.imag-seg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    justify-items: center;
+    
+}
+/* fin del main */
+
+/* footer, pie de pagina */
+
+footer h2{
+    font-size: 25px;
+    display: flex;
+    justify-items: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+
+/*  logos de redes */
+.redes-inst{
+    width: 60px;
+    height: 60px;
+}
+.redes-wh{
+    width: 50px;
+    height: 50px;
+}
+.redes-fb{
+    width: 50px;
+    height: 50px;
+}
+
+.seccion-redes{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+    /* mapa ubicacion */
+.mapa{
+    width: 300px;
+    height: 200px;
+    padding-left: 50px;
+}
+
+/* formulario */
+form{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+form fieldset{
+    border: solid 2px blue;
+    font-size: 15px;
+
+}
+
+.map-form{
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+
+    }
+/* fin footer */
+
+}
+
+
+
+
+
+
+
+/* media queries hasta 1024px */
+@media screen and (min-width:1024px){
+    /* encabezado logo */
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+/* nombre de pagina index */
+.h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+
+/* menu navegable */
+nav ul li{
+    background-color: aqua;
+    display: inline-block;
+    margin-left: 180px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    border: solid 2px black;
+    
+}
+
+nav{
+    display: flex;
+
+}
+
+
+/* boton de cotizar */
+.boton-cotizar{
+    margin: 30px;
+    padding-left: 380px;
+    font-size: 50px;
+    border: solid black;
+    font-family: fantasy;
+    
+  
+}
+
+/* main, cuerpo principal de pagina */
+/* aplicando grig al main */
+.h22{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.imag-p{
+    text-align: center;
+    margin: 20px 50px;
+}
+
+/* imagenes de seguros */
+.tama-1{
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+}
+.tama-2{
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+}
+.tama-3{
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+}
+.tama-4{
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+}
+.imag-seg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    justify-items: center;
+    
+}
+
+
+/* fin del main */
+
+/* footer, pie de pagina */
+
+footer h2{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+
+/*  logos de redes */
+.redes-inst{
+    width: 110px;
+    height: 110px;
+}
+.redes-wh{
+    width: 100px;
+    height: 100px;
+}
+.redes-fb{
+    width: 100px;
+    height: 100px;
+}
+
+.seccion-redes{
+    margin-left: 170px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+    
+
+/* mapa ubicacion */
+.mapa{
+    width: 300px;
+    height: 200px;
+    padding-left: 100px;
+}
+
+/* formulario */
+form{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+form fieldset{
+    border: solid 2px blue;
+    font-size: 30px;
+
+}
+
+.map-form{
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+
+    }
+}
+/* fin footer */
