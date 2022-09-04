@@ -1,480 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* colores del cuerpo y encabezado */
-header{
-    display: grid;
-    grid-template-areas:
-    "logo-titulo h1 h1 h1"
-    "nav nav nav nav";
-}
-.logo-titulo{
-    grid-area: logo-titulo;
-}
-.h1{
-    grid-area: h1;
-    font-size: 50px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-}
-nav{
-    grid-area: nav;
+body {
+  background-color: cornflowerblue; }
+
+header {
+  display: grid;
+  grid-template-areas: "img h1 h1 h1" "nav nav nav nav"; }
+  header div img {
+    width: 200px;
+    height: 200px;
+    grid-area: img;
+    padding: 20px; }
+
+.h1 {
+  font-size: 30px;
+  grid-area: h1;
+  padding: 60px 100px; }
+
+nav {
+  grid-area: nav; }
+  nav ul {
     display: flex;
-    justify-content: center;
-}
+    justify-content: space-around; }
+    nav ul li {
+      display: inline-block;
+      margin: 30px;
+      padding: 10px;
+      font-size: 30px;
+      border: solid 2px white;
+      font-style: oblique; }
+      nav ul li a {
+        color: black; }
 
+main nav {
+  margin: 20px;
+  padding: 30px;
+  text-align: center; }
+  main nav a {
+    font-size: 30px;
+    color: black;
+    border: solid 3px white;
+    background-color: aquamarine; }
 
+section h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px; }
 
+.n-h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px; }
 
-/* encabezado logo */
-.logo{
+p {
+  text-align: center;
+  margin: 30px; }
+
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px; }
+  .imagenes .tama-1 {
+    width: 200px;
+    height: 200px; }
+
+.aside-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+footer h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px; }
+
+.seccion-redes {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem; }
+  .seccion-redes a .redes-inst {
+    width: 200px;
+    height: 200px; }
+
+.map-form {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px; }
+  .map-form aside .mapa {
     width: 300px;
-    height: 300px;
-    
-}
-
-
-/* menu navegable */
-nav ul li{
-    background-color:rgb(45, 157, 177);
-    list-style: none;
-    display: inline-flex;
-    padding: 10px;
-    margin: 30px;
-    font-size: 30px;
-    border:solid 2px rgb(73, 197, 206);
-}
-
-nav ul li:hover{
-    background-color: rgb(222, 232, 240);
-    transform: scale(1.5);
-}
-
-
-
-/* boton de cotizar */
-.boton-cotizar{
-    margin: 30px;
-    font-size: 50px;
-    font-family: fantasy;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
-}
-
-
-
-
-
-
-/* main, cuerpo principal de pagina */
-/* aplicando grig al main */
-main .imag-1{
-    background-color: brown;
-}
-
-
-
-
-
-.h22{
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-}
-
-.imag-p{
-    text-align: center;
-    margin: 20px 50px;
-}
-
-/* imagenes de seguros */
-.tama-1{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-}
-.tama-2{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-}
-.tama-3{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-}
-.tama-4{
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-}
-.imag-seg{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    justify-items: center;  
-}
-
-/* main de pagina nosotros */
-.container{
-    text-align: center;
-    margin-top: 30px; 
-}
-
-
-/* main pagina contacto */
-
-.video-contacto{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-
-/* fin del main */
-
-
-/* footer, pie de pagina */
-
-footer h2{
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
-
-}
-
-
-
-/*  logos de redes */
-.redes-inst{
-    width: 110px;
-    height: 110px;
-}
-.redes-wh{
-    width: 100px;
-    height: 100px;
-}
-.redes-fb{
-    width: 100px;
-    height: 100px;
-}
-
-.seccion-redes{
-    margin-left: 250px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-
-    
-
-
-/* mapa ubicacion */
-.mapa{
-    width: 300px;
-    height: 200px;
-    padding-left: 100px;
-}
-
-
-/* formulario */
-form{
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-
-form fieldset{
-    border: solid 2px blue;
-    font-size: 30px;
-    background-color: rgb(219, 214, 214);
-}
-
-.map-form{
-    display:flex;
-    justify-items: center;
-    justify-content: space-around;
-
-    }
-
-.derechos{
-    font-size: 20px;
-    margin: 100px;
-    text-align: center;
-
-}
-
-/* form de pagina siniestro */
-.form-siniestro{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    margin-right: 90px;
-}
-
-/* fin footer  index*/
-
-
-
-/* media queries */
-
-@media (max-width:600px) and (min-width:400px) {
-    body{
-        background-color: rgb(168, 57, 57);
-    }
-    header{
-        display: grid;
-        grid-template-areas:
-        "logo-titulo h1"
-        "nav nav"
-        "nav nav";
-    }
-    .logo-titulo{
-        grid-area: logo-titulo;
-    }
-    .h1{
-        grid-area: h1;
-        font-size: 13px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-    nav{
-        grid-area: nav;
-        display: flex;
-        justify-content: center;
-    }
-    
-    
-    
-    
-    /* encabezado logo */
-    .logo{
-        width: 50px;
-        height: 50px;
-        
-    }
-    
-    
-    /* menu navegable */
-    nav ul li{
-        background-color:rgb(45, 157, 177);
-        list-style: none;
-        display: inline-flex;
-        padding: 5px;
-        margin: 20px;
-        font-size: 15px;
-        border:solid 2px rgb(73, 197, 206);
-    }
-    
-    nav ul li:hover{
-        background-color: rgb(222, 232, 240);
-        transform: scale(1.5);
-    }
-/* boton de cotizar */
-.boton-cotizar{
-    margin: 10px;
-    font-size: 30px;
-    font-family: fantasy;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-
-
-
-
-
-/* main, cuerpo principal de pagina */
-/* aplicando grig al main */
-main .imag-1{
-    background-color: brown;
-}
-
-
-
-
-
-.h22{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.imag-p{
-   display: flex;
-   align-items: center;
-}
-
-/* imagenes de seguros */
-.tama-1{
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-}
-.tama-2{        
-    width: 100px;
-    height: 100px;
-    margin: 10px
-}
-.tama-3{
-    width: 100px;
-    height: 100px;
-    margin: 10px
-}
-.tama-4{
-    width: 100px;
-    height: 100px;
-    margin: 10px
-}
-.imag-seg{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    justify-items: center;  
-}
-
-/* footer, pie de pagina */
-
-footer h2{
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-    margin-top: 50px;
-
-}
-
-
-
-/*  logos de redes */
-.redes-inst{
-    width: 110px;
-    height: 110px;
-}
-.redes-wh{
-    width: 100px;
-    height: 100px;
-}
-.redes-fb{
-    width: 100px;
-    height: 100px;
-}
-
-.seccion-redes{
-    margin-bottom: 30px;
-    margin: 40px;
-    padding-left: 40px;
-    
-}
-
-
-    
-
-
-/* mapa ubicacion */
-.mapa{
-    width: 200px;
-    height: 150px;
-    padding-left: 50px;
-}
-
-
-/* formulario */
-form{
-    margin-left: 40px;
-    margin-bottom: 50px;
-    margin-right: 20PX;
-}
-
-
-
-/* fin footer  index*/
-}
-
-
-@media (max-width:900px) and (min-width:600px){
-    body{
-        background-color: blue;
-    }
-    .h1{
-        font-size: 40px;
-        margin-bottom: 10px;
-        margin-left: 60px;
-    }
-
-    .logo{
-        width: 100px;
-        height: 100px;
-    }
-    
-    /* imagenes de seguros */
-.tama-1{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-}
-.tama-2{        
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-}
-.tama-3{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-}
-.tama-4{
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-}
-
-/*  logos de redes */
-.redes-inst{
-    width: 110px;
-    height: 110px;
-}
-.redes-wh{
-    width: 100px;
-    height: 100px;
-}
-.redes-fb{
-    width: 100px;
-    height: 100px;
-}
-
-.seccion-redes{
-    margin-bottom: 30px;
-    margin: 40px;
-    padding-left: 120px;
-    
-}
-
-
-    
-
-
-/* mapa ubicacion */
-.mapa{
-    width: 200px;
-    height: 150px;
-    padding-left: 30px;
-}
-
-
-/* formulario */
-form{
-    margin-left: 40px;
-    margin-bottom: 50px;
-    margin-right: 20PX;
-}
-}
+    height: 200px; }
+
+.mapa-sin {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.derechos {
+  padding-bottom: 30px; }
+  .derechos h3 {
+    text-align: center; }
+
+.form-siniestro {
+  display: flex;
+  justify-content: center; }

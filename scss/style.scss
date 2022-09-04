@@ -1,0 +1,160 @@
+@import "utilities/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-principal;
+}
+
+header{
+    display: grid;
+    grid-template-areas: 
+    "img h1 h1 h1"
+    "nav nav nav nav";
+    div{
+       img{
+        width: 200px;
+        height: 200px;
+        grid-area: img;
+        padding: 20px;
+       }
+    }
+}
+
+.h1{
+    font-size: 30px;
+    grid-area: h1;
+    padding: 60px 100px;
+}
+
+nav{
+    grid-area: nav;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            display: inline-block;
+            margin: 30px;
+            padding: 10px;
+            font-size: 30px;
+            border: solid 2px $color-secundario;
+            font-style: oblique;
+            a{
+                color: $color-tipografia;
+            }
+        }
+    }
+}
+
+main{
+    
+    nav{
+        margin: 20px;
+        padding: 30px;
+        text-align: center;
+        a{
+            font-size: 30px;
+            color: black;
+            border: solid 3px $color-secundario;
+            background-color: aquamarine;
+        }
+        
+    }
+}
+
+section{
+    h2{
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+.n-h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+    margin: 30px;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    .tama-1{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.aside-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer{
+    h2{
+        font-size: 35px;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+}
+
+
+.seccion-redes{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    a{
+        .redes-inst{
+        width: 200px;
+        height: 200px;
+        }
+    }
+}
+
+.map-form{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    aside{
+        .mapa{
+            width: 300px;
+            height: 200px;
+        }
+    }
+}
+
+.mapa-sin{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.derechos{
+    padding-bottom: 30px;
+    
+    h3{
+        text-align: center;
+    }
+}
+
+.form-siniestro{
+    display: flex;
+    justify-content: center;
+}
+
+
+
